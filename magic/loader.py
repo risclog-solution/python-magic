@@ -13,6 +13,7 @@ def _lib_candidates_linux():
 
     This is necessary because alpine is bad
     """
+    yield f"{os.path.expanduser('~')}/.nix-profile/lib/libmagic.so"
     yield "libmagic.so.1"
 
 
